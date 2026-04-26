@@ -1,0 +1,30 @@
+[
+  {
+    "id": "seed-1",
+    "friendId": 2,
+    "type": "meeting",
+    "title": "Coffee meetup with Sadia Noor",
+    "date": "2026-04-20"
+  },
+  {
+    "id": "seed-2",
+    "friendId": 5,
+    "type": "email",
+    "title": "Follow-up email to Rakib Ahmed",
+    "date": "2026-04-18"
+  },
+  {
+    "id": "seed-3",
+    "friendId": 1,
+    "type": "hangout",
+    "title": "Evening hangout with Arif Hasan",
+    "date": "2026-04-16"
+  },
+  {
+    "id": "seed-4",
+    "friendId": 7,
+    "type": "discussion",
+    "title": "Book discussion with Jannat Islam",
+    "date": "2026-04-12"
+  }
+]

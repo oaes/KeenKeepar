@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arif Hasan",
+    "picture": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=500&q=80",
+    "email": "arif.hasan@example.com",
+    "days_since_contact": 9,
+    "status": "on-track",
+    "tags": ["tech", "travel"],
+    "bio": "Met at a tech meetup in Dhaka. We often discuss startups and plan short trips together.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 2,
+    "name": "Sadia Noor",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80",
+    "email": "sadia.noor@example.com",
+    "days_since_contact": 18,
+    "status": "almost due",
+    "tags": ["design", "uiux"],
+    "bio": "A creative designer friend who shares insights on UI/UX trends and freelance work.",
+    "goal": 21,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 3,
+    "name": "Imran Hossain",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=500&q=80",
+    "email": "imran.hossain@example.com",
+    "days_since_contact": 34,
+    "status": "overdue",
+    "tags": ["school", "old friend"],
+    "bio": "We studied together in school and still catch up occasionally about life and memories.",
+    "goal": 20,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 4,
+    "name": "Nabila Karim",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80",
+    "email": "nabila.karim@example.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["fitness", "neighbor"],
+    "bio": "Lives nearby and joins morning walks regularly. We motivate each other to stay fit.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 5,
+    "name": "Rakib Ahmed",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80",
+    "email": "rakib.ahmed@example.com",
+    "days_since_contact": 15,
+    "status": "almost due",
+    "tags": ["freelance", "marketing"],
+    "bio": "Met through freelance projects. We exchange ideas about clients and digital marketing.",
+    "goal": 16,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 6,
+    "name": "Tasnim Rahman",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80",
+    "email": "tasnim.rahman@example.com",
+    "days_since_contact": 27,
+    "status": "overdue",
+    "tags": ["mentor", "career"],
+    "bio": "A senior mentor who guides me in career decisions and remote job opportunities.",
+    "goal": 21,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 7,
+    "name": "Jannat Islam",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80",
+    "email": "jannat.islam@example.com",
+    "days_since_contact": 11,
+    "status": "on-track",
+    "tags": ["books", "community"],
+    "bio": "We run a small book club and discuss self-development and fiction regularly.",
+    "goal": 18,
+    "next_due_date": "2026-04-24"
+  },
+  {
+    "id": 8,
+    "name": "Sabbir Chowdhury",
+    "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=500&q=80",
+    "email": "sabbir.chowdhury@example.com",
+    "days_since_contact": 22,
+    "status": "almost due",
+    "tags": ["gaming", "tech"],
+    "bio": "We built side projects together and still enjoy gaming sessions on weekends.",
+    "goal": 24,
+    "next_due_date": "2026-04-20"
+  }
+]

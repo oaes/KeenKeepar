@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import BannerSection from "@/components/home/BannerSection";
 import SummaryCards from "@/components/home/SummaryCards";
-import FriendsGrid from "@/components/friends/FriendsGrid";
+import FriendsGrid from "../components/friends/FriendsGrid";
 import { getTimelineEntries } from "@/lib/timeline";
 
 export default function Home() {
