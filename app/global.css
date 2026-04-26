@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --background: #eef2f5;
+  --foreground: #243746;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+.btn {
+  text-transform: none;
+}
