@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import BannerSection from "@/components/home/BannerSection";
-import SummaryCards from "@/components/home/SummaryCards";
+import BannerSection from "../components/home/Banner.jsx";
+import Summary from "../components/home/Summary.jsx"
 import FriendsGrid from "../components/friends/FriendsGrid";
-import { getTimelineEntries } from "@/lib/timeline";
+import { getTimelineEntries } from "../lib/timeline.js";
 
 export default function Home() {
   const [friends, setFriends] = useState([]);
@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <>
       <BannerSection />
-      <SummaryCards stats={summaryStats} />
+      <Summary stats={summaryStats} />
       <FriendsGrid friends={friends} />
     </>
   );

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navItems } from "@/lib/constants";
+import { navItems } from "../../lib/constant";
 
 export default function Navbar() {
   const pathname = usePathname();

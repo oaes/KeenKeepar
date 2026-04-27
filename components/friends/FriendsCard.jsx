@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { statusStyles } from "@/lib/constants";
+import { statusStyles } from "../../lib/constant";
 
-export default function FriendCard({ friend }) {
+export default function FriendsCard({ friend }) {
   return (
     <Link
       href={`/friends/${friend.id}`}
