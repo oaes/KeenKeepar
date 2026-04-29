@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import InteractionIcon from "@/components/ui/InteractionIcon";
-import { formatReadableDate } from "@/lib/date";
-import { getTimelineEntries } from "@/lib/timeline";
+import InteractionIcon from "../../components/ui/Icon";
+import { formatReadableDate } from "../../lib/data";
+import {getTimelineEntries
+} from "../../lib/timeline.js"
 
 export default function TimelinePage() {
   const [selectedType, setSelectedType] = useState("all");
