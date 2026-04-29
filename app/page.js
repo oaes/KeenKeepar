@@ -11,7 +11,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [currentDate, setCurrentDate] = useState(null);
 
-  // ✅ Fetch friends (client-side)
+
   useEffect(() => {
     async function loadFriends() {
       try {
@@ -28,12 +28,11 @@ export default function Home() {
     loadFriends();
   }, []);
 
-  // ✅ Fix hydration issue (date only on client)
   useEffect(() => {
     setCurrentDate(new Date());
   }, []);
 
-  // ✅ Safe memo (only runs after date is ready)
+
   const summaryStats = useMemo(() => {
     if (!currentDate) return null;
 
@@ -56,7 +55,7 @@ export default function Home() {
     return { total, onTrack, almostDue, overdue, interactionsThisMonth };
   }, [friends, currentDate]);
 
-  // ✅ Loading guard (prevents mismatch)
+
   if (isLoading || !summaryStats) {
     return (
       <section className="flex min-h-[45vh] flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white">
