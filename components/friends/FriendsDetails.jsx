@@ -3,10 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Archive, BellRing, MessageSquareMore, Pencil, Phone, Trash2, Video } from "lucide-react";
-import { addInteractionEntry } from "@/lib/timeline";
-import { formatReadableDate } from "@/lib/date";
-import { statusStyles } from "@/lib/constants";
-import { useToast } from "@/components/ui/ToastProvider";
+import { addInteractionEntry } from "../../lib/timeline";
+import { formatReadableDate } from "../../lib/data";
+import { statusStyles } from "../../lib/constant";
+import { useToast } from "../ui/Toast";
 
 const quickActions = [
   { type: "call", label: "Call", icon: Phone },
