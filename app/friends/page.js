@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import FriendDetailsClient from "@/components/friends/FriendDetailsClient";
-import { getFriendById } from "@/lib/friends";
+import FriendDetails from "../../components/friends/FriendsDetails.jsx"
+import {getFriendById} from "../../lib/friend.js"
 
 export default async function FriendDetailsPage({ params }) {
   const { id } = await params;
@@ -10,5 +10,5 @@ export default async function FriendDetailsPage({ params }) {
     notFound();
   }
 
-  return <FriendDetailsClient friend={friend} />;
+  return <FriendDetails friend={friend} />;
 }

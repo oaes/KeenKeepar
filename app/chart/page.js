@@ -2,8 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
-import { interactionColors, interactionLabels } from "@/lib/constants";
-import { getInteractionTypeCounts, getTimelineEntries } from "@/lib/timeline";
+import { interactionColors, interactionLabels } from "../../lib/constant";
+import { getInteractionTypeCounts, getTimelineEntries
+} from "../../lib/timeline"
 
 export default function StatsPage() {
   const [entries, setEntries] = useState([]);
