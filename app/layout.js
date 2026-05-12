@@ -25,13 +25,17 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans?.variable} ${geistMono?.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <ToastProvider>
-          <Navbar />
-          <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6 lg:px-8">{children}</main>
-          <Footer />
-        </ToastProvider>
-      </body>
+      <body className="min-h-full flex flex-col min-w-0">
+  <ToastProvider>
+    <Navbar />
+
+    <main className="mx-auto w-full max-w-6xl min-w-0 flex-1 px-4 py-8 sm:px-6 lg:px-8">
+      {children}
+    </main>
+
+    <Footer />
+  </ToastProvider>
+</body>
     </html>
   );
 }
