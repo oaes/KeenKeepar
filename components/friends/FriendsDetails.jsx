@@ -25,7 +25,7 @@ export default function FriendDetailsClient({ friend }) {
     }
 
     setLatestAction(newEntry.title);
-    pushToast(`${newEntry.title} added to timeline`);
+    pushToast(`${newEntry?.title} added to timeline`);
   };
 
   return (
@@ -40,9 +40,9 @@ export default function FriendDetailsClient({ friend }) {
               height={80}
               className="h-20 w-20 rounded-full object-cover"
             />
-            <h1 className="mt-4 text-3xl font-bold text-[#1f2b3f]">{friend.name}</h1>
+            <h1 className="mt-4 text-3xl font-bold text-[#1f2b3f]">{friend?.name}</h1>
             <span className={`badge mt-3 border-0 text-white ${statusStyles[friend.status]}`}>
-              {friend.status}
+              {friend?.status}
             </span>
 
             <div className="mt-3 flex flex-wrap justify-center gap-2">
@@ -53,7 +53,7 @@ export default function FriendDetailsClient({ friend }) {
               ))}
             </div>
 
-            <p className="mt-4 text-sm italic text-slate-500">&ldquo;{friend.bio}&rdquo;</p>
+            <p className="mt-4 text-sm italic text-slate-500">&ldquo;{friend?.bio}&rdquo;</p>
             <p className="mt-2 text-sm text-slate-500">Preferred: {friend.email}</p>
           </div>
         </article>
@@ -75,7 +75,7 @@ export default function FriendDetailsClient({ friend }) {
       <div className="space-y-4">
         <section className="grid gap-3 sm:grid-cols-3">
           <article className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-            <p className="text-2xl font-extrabold text-[#1f5a49]">{friend.days_since_contact}</p>
+            <p className="text-2xl font-extrabold text-[#1f5a49]">{friend?.days_since_contact}</p>
             <p className="text-slate-500">Days Since Contact</p>
           </article>
           <article className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
@@ -97,7 +97,7 @@ export default function FriendDetailsClient({ friend }) {
             </button>
           </div>
           <p className="mt-4  text-slate-600">
-            Connect every <span className="font-bold text-[#1f2b3f]">{friend.goal} days</span>
+            Connect every <span className="font-bold text-[#1f2b3f]">{friend?.goal} days</span>
           </p>
         </section>
 
@@ -109,12 +109,12 @@ export default function FriendDetailsClient({ friend }) {
               return (
                 <button
                   key={action.type}
-                  onClick={() => handleQuickCheckIn(action.type)}
+                  onClick={() => handleQuickCheckIn(action?.type)}
                   className="rounded-xl border border-slate-200 bg-slate-50 py-4 text-[#1f2b3f] transition hover:border-[#1f5a49] hover:bg-emerald-50"
                 >
                   <div className="flex flex-col items-center justify-center gap-2">
                     <Icon size={20} />
-                    <span className="font-medium">{action.label}</span>
+                    <span className="font-medium">{action?.label}</span>
                   </div>
                 </button>
               );
